@@ -1,0 +1,67 @@
+body {
+	margin: 0px;
+	background: url("./img/7.jpg") no-repeat ;
+	background-size: 100% 100%;
+	width: 1000px;
+	height: 1000px;
+	overflow: hidden;
+}
+.flsh {
+
+	width: 40px;
+	height: 40px;
+	background: url("./img/3.jpg") no-repeat;
+	background-size: 40px 40px; 
+	background-position: center;
+	animation: run 4s infinite steps(11),go 20s infinite linear alternate;
+	transform:translate(0px,0px);
+}
+
+@keyframes run{
+	0% {
+		background-position-y: 0%;
+
+	}
+	100% {
+		background-position-y: 100%
+	}
+}
+@keyframes go{
+	0% {
+		transform:translate(0px,0px);
+
+	}
+	100% {
+		transform:translate(800px,100px);
+	}
+}
+
+
+
+.shayu {
+	margin-top: 200px;
+	width: 131px;
+	height: 65px;
+	background: url("./img/2.jpg") no-repeat;
+	background-size: 131px 65px; 
+	animation: run1 8s infinite steps(11),go1 30s infinite linear alternate;
+	transform:translate(0px,0px);
+}
+@keyframes run1{
+	0% {
+		background-position-y: 0%;
+
+	}
+	100% {
+		background-position-y: 100%
+	}
+}
+@keyframes go1{
+	0% {
+		transform:translate(0px,0px);
+
+	}
+	100% {
+		transform:translate(800px,100px);
+	}
+}
